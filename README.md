@@ -1,130 +1,135 @@
- 🚨 AgentOps AI – Incident Investigator
 
-An AI-inspired **incident analysis system** built using Streamlit that helps analyze IT logs and generate structured incident reports with severity, root cause, and recommendations.
+---
 
+# 🚨 AgentOps AI – Incident Investigator
 
- 📌 Problem Statement
+An **intelligent incident analysis system** built with Streamlit that transforms raw IT logs into structured incident insights using a **rule-based scoring intelligence engine**.
 
-In real-world IT operations, engineers deal with large volumes of unstructured incident logs. Manually identifying severity and root cause takes time.
+---
 
-👉 This project automates that process using a smart rule-based intelligence engine.
+# 💡 Problem Statement
 
+Modern IT systems generate massive volumes of unstructured logs during failures.
+Engineers often struggle with:
 
+* Identifying severity under time pressure
+* Extracting meaningful signals from noisy logs
+* Quickly understanding root cause patterns
 
-⚙️ Features
+👉 This leads to delayed incident resolution and increased downtime.
 
-* 🧠 Smart incident log analysis
-* 🚨 Severity detection (LOW / MEDIUM / HIGH / CRITICAL)
-* 🔍 Root cause identification
-* 💡 Automated recommendations
-* 📊 Structured incident report
-* 🤖 AI-style reasoning explanation
-* 🚦 Real-time status indicator
-* 📌 Incident ID + timestamp generation
+---
 
+# 🆚 BEFORE vs AFTER
 
+## ❌ BEFORE AgentOps AI
 
-🛠 Tech Stack
+* Manual log inspection across multiple systems
+* No structured severity classification
+* Time-consuming root cause detection
+* Reactive debugging during outages
+
+---
+
+## ✅ AFTER AgentOps AI
+
+* Automated log parsing with keyword intelligence
+* Real-time severity scoring system
+* Structured incident report generation
+* Faster, more consistent incident understanding
+
+---
+
+# ⚙️ Features
+
+🧠 **Log Intelligence Engine** – parses and analyzes raw incident logs
+🚨 **Severity Scoring System** – classifies incidents (LOW → CRITICAL)
+🔍 **Root Cause Detection (Rule-Based)** – maps patterns to likely failures
+💡 **Recommendation Engine** – suggests corrective actions based on detected issues
+📊 **Structured Incident Reports** – clean, readable output for engineers
+🚦 **Real-time Analysis Dashboard** – instant feedback via Streamlit
+📌 **Incident Metadata Generator** – ID + timestamp tracking
+
+---
+
+# 🛠 Tech Stack
 
 * Python
 * Streamlit
-* Random module (for incident ID)
-* Datetime module
-
-
-
-🧠 How It Works
-
-1. User pastes incident log
-2. System parses keywords (CPU, Memory, Disk, Error)
-3. A scoring engine calculates severity
-4. Root cause + summary are generated
-5. Recommendations are displayed
-6. Final structured incident report is shown
-
-
-
- 🏗 Architecture
-
-```
-User Input (Incident Log)
-        ↓
-Log Parsing Engine
-        ↓
-Keyword Detection (CPU / Memory / Disk / Error)
-        ↓
-Scoring-Based Intelligence System
-        ↓
-Severity Classification Engine
-        ↓
-Report Generator
-        ↓
-Streamlit UI Dashboard
-```
+* datetime module
+* random module
 
 ---
 
- 🚀 How to Run Locally
+# 🧠 How It Works
 
-```bash
-# Clone repo
-git clone https://github.com/shanvii3singhh/agentops-ai-incident-investigator.git
-
-# Go to project folder
-cd agentops-ai-incident-investigator
-
-# Install dependencies
-pip install streamlit
-
-# Run app
-streamlit run app.py
-```
+* User submits raw incident log
+* System extracts critical keywords (CPU / Memory / Disk / Error)
+* A weighted scoring engine evaluates system health impact
+* Severity level is assigned based on computed score
+* Root cause patterns are inferred using rule mappings
+* Final structured incident report is generated and displayed
 
 ---
 
- 📊 Example Incident
+# 🏗 Architecture
 
-```
-CPU usage is very high and memory error detected
-```
+User Input (Incident Logs)
+→ Log Parsing Layer
+→ Keyword Detection Engine
+→ Scoring-Based Intelligence System
+→ Severity Classification Module
+→ Root Cause & Recommendation Generator
+→ Streamlit Presentation Layer
 
- Output:
+---
 
-* Severity: CRITICAL
-* Root Cause: Resource exhaustion
-* Recommendations: Scale resources, check logs
+# 🚀 Example
 
+### Input:
 
+CPU usage is very high and memory error detected in production system
 
- 🔥 Key Highlights
+---
 
-* No external API required (fully free)
-* Fast + lightweight system
-* Works in real-time
-* Hackathon-ready UI
-* Simulates AI reasoning without paid models
+### Output:
 
+**Severity:** 🔴 CRITICAL
+**Category:** System Resource Failure
 
- 🎯 Future Improvements
+**Root Cause:** High CPU utilization combined with memory pressure leading to resource exhaustion
 
-* Add real AI model integration (LLM-based analysis)
-* Incident history database
-* Export report as PDF
-* Charts & analytics dashboard
-* Email alert system
+**Recommendations:**
 
+* Scale system resources vertically/horizontally
+* Investigate memory leaks in services
+* Enable performance monitoring alerts
 
+---
 
- 👩‍💻 Author
+# 🔥 Key Highlights
 
-Built by **Shanvi Singh**
-For AgentOps Hackathon 🚀
+* ⚡ Lightweight, fast incident analysis system
+* 🧠 Rule-based intelligence mimicking DevOps workflows
+* 🚀 Real-time log interpretation engine
+* 🎯 Designed for hackathon demonstration and practical DevOps scenarios
+* 🤖 No external APIs required (fully offline system)
 
+---
 
+# 🎯 Future Enhancements
 
- 🏆 Impact
+* Integration with LLM-based analysis for deeper insights
+* Historical incident tracking system
+* PDF report export for enterprise usage
+* Dashboard analytics for incident trends
+* Alert system integration (Slack / Email)
 
-This project demonstrates how **simple rule-based intelligence** can mimic AI-driven incident investigation systems used in real-world DevOps environments.
+---
 
+# 🏆 Impact
 
+AgentOps AI demonstrates how **structured rule-based intelligence systems can significantly improve incident response workflows by converting raw logs into actionable engineering insights.**
+
+---
 
