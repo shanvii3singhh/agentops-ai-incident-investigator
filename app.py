@@ -75,10 +75,8 @@ if st.button("Investigate Incident"):
 
         if severity == "High":
             st.error("CRITICAL")
-
         elif severity == "Medium":
             st.warning("OPEN")
-
         else:
             st.success("MONITORING")
 
@@ -86,9 +84,32 @@ if st.button("Investigate Incident"):
 
         if severity == "High":
             st.error(severity)
-
         elif severity == "Medium":
             st.warning(severity)
-
         else:
             st.success(severity)
+
+        # Extra Professional Section
+
+        st.markdown("---")
+        st.subheader("🤖 AI Incident Analysis")
+
+        business_impact = (
+            "Potential service degradation affecting users and business operations."
+        )
+
+        prevention = (
+            "Implement proactive monitoring, alerting, and capacity planning."
+        )
+
+        st.write("### Business Impact")
+        st.write(business_impact)
+
+        st.write("### Prevention Measures")
+        st.write(prevention)
+
+        st.write("### Executive Summary")
+        st.info(
+            f"Incident {incident_id} was analyzed with severity "
+            f"{severity}. Immediate investigation is recommended."
+        )
